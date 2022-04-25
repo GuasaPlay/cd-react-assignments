@@ -47,6 +47,14 @@ export const HomePage = () => {
               19. Generador de caja
             </Link>
           </li>
+          <li className="w-full">
+            <Link
+              to="tabs"
+              className="block h-32 w-full rounded-lg bg-emerald-600 p-4 font-medium text-white hover:bg-opacity-95"
+            >
+              20. Pestañas
+            </Link>
+          </li>
         </ul>
       </section>
     </div>
