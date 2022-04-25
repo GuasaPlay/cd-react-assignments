@@ -1,4 +1,4 @@
-import PersonCard from "components/apoyalo/PersonCard";
+import { PersonCard } from "components/gran-inversion/PersonCard";
 import { PageTitle } from "components/ui/PageTitle";
 
 export const GranInversionPage = () => {
