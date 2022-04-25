@@ -23,6 +23,14 @@ export const HomePage = () => {
               13. Poniendo todo junto
             </Link>
           </li>
+          <li className="w-full">
+            <Link
+              to="gran-inversion"
+              className="tracking- block h-32 w-full rounded-lg bg-orange-600 p-4 font-medium text-white hover:bg-opacity-95"
+            >
+              15. Gran inversión
+            </Link>
+          </li>
         </ul>
       </section>
     </div>

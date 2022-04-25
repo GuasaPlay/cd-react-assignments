@@ -3,6 +3,7 @@ import { DefaultLayout } from "layouts/DefaultLayout";
 import { HomePage } from "pages/HomePage";
 import { ApoyaloPage } from "pages/ApoyaloPage";
 import { PoniendoTodoJuntoPage } from "pages/PoniendoTodoJuntoPage";
+import { GranInversionPage } from "pages/GranInversionPage";
 
 export const RouterApp = () => {
   return (
@@ -15,6 +16,7 @@ export const RouterApp = () => {
             path="poniendo-todo-junto"
             element={<PoniendoTodoJuntoPage />}
           />
+          <Route path="gran-inversion" element={<GranInversionPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
