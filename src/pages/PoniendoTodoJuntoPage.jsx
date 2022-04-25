@@ -1,10 +1,10 @@
-import PersonCard from "components/apoyalo/PersonCard";
+import PersonCard from "components/poniendo-todo-junto/PersonCard";
 import { PageTitle } from "components/ui/PageTitle";
 
-export const ApoyaloPage = () => {
+export const PoniendoTodoJuntoPage = () => {
   return (
     <div className="mx-auto mt-20 max-w-[1100px]">
-      <PageTitle name="12. Apóyalo" />
+      <PageTitle name="13. Poniendo todo junto" />
       <div className="mt-6 space-y-4">
         <PersonCard
           firstName="Jane"
