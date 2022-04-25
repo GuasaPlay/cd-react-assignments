@@ -4,6 +4,7 @@ import { HomePage } from "pages/HomePage";
 import { ApoyaloPage } from "pages/ApoyaloPage";
 import { PoniendoTodoJuntoPage } from "pages/PoniendoTodoJuntoPage";
 import { GranInversionPage } from "pages/GranInversionPage";
+import { FormularioConHooksPage } from "pages/FormularioConHooksPage";
 
 export const RouterApp = () => {
   return (
@@ -17,6 +18,10 @@ export const RouterApp = () => {
             element={<PoniendoTodoJuntoPage />}
           />
           <Route path="gran-inversion" element={<GranInversionPage />} />
+          <Route
+            path="formulario-con-hooks"
+            element={<FormularioConHooksPage />}
+          />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
