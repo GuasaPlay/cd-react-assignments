@@ -33,7 +33,7 @@ export const GeneradorDeCajaPage = () => {
 
   return (
     <div className="mx-auto mt-20 max-w-[1100px] px-3">
-      <PageTitle name="16. Generador de caja" />
+      <PageTitle name="19. Generador de caja" />
       <section className="mt-8 flex w-full justify-center">
         <div className="w-1/2">
           <ValidColors />
