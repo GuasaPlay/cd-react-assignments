@@ -79,6 +79,14 @@ export const HomePage = () => {
               24. Pokemon API
             </Link>
           </li>
+          <li className="w-full">
+            <Link
+              to="axios-pokemon-api"
+              className="block h-24 w-full rounded-lg bg-fuchsia-600 p-4 font-medium text-white hover:bg-opacity-95"
+            >
+              25. Axios Pokemon API
+            </Link>
+          </li>
         </ul>
       </section>
     </div>

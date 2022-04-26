@@ -10,6 +10,7 @@ import { TabsPage } from "pages/TabsPage";
 import { ToDoPage } from "pages/ToDoPage";
 import { MasFormulariosPage } from "pages/MasFormulariosPage";
 import { PokemonApiPage } from "pages/PokemonApiPage";
+import { AxiosPokemonApiPage } from "pages/AxiosPokemonApiPage";
 
 export const RouterApp = () => {
   return (
@@ -32,6 +33,7 @@ export const RouterApp = () => {
           <Route path="tabs" element={<TabsPage />} />
           <Route path="lista-de-tareas" element={<ToDoPage />} />
           <Route path="pokemon-api" element={<PokemonApiPage />} />
+          <Route path="axios-pokemon-api" element={<AxiosPokemonApiPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
