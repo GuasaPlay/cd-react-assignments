@@ -78,7 +78,7 @@ export const GeneradorDeCajaPage = () => {
           </form>
           <div className="mt-3 text-center">
             <p className="text-sm  text-slate-700">
-              Si el campo tamaño es mejor a 50 entonces se aplicará el tamaño
+              Si el campo tamaño es menor a 50 entonces se aplicará el tamaño
               por defecto de 200
             </p>
           </div>
