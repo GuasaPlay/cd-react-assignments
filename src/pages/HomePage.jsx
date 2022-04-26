@@ -10,7 +10,7 @@ export const HomePage = () => {
           <li className="w-full">
             <Link
               to="apoyalo"
-              className="block h-32 w-full rounded-lg bg-green-600 p-4 font-medium text-white hover:bg-opacity-95"
+              className="block h-24 w-full rounded-lg bg-green-600 p-4 font-medium text-white hover:bg-opacity-95"
             >
               12. Apóyalo
             </Link>
@@ -18,7 +18,7 @@ export const HomePage = () => {
           <li className="w-full">
             <Link
               to="poniendo-todo-junto"
-              className="block h-32 w-full rounded-lg bg-teal-600 p-4 font-medium text-white hover:bg-opacity-95"
+              className="block h-24 w-full rounded-lg bg-teal-600 p-4 font-medium text-white hover:bg-opacity-95"
             >
               13. Poniendo todo junto
             </Link>
@@ -26,7 +26,7 @@ export const HomePage = () => {
           <li className="w-full">
             <Link
               to="gran-inversion"
-              className="block h-32 w-full rounded-lg bg-orange-600 p-4 font-medium text-white hover:bg-opacity-95"
+              className="block h-24 w-full rounded-lg bg-orange-600 p-4 font-medium text-white hover:bg-opacity-95"
             >
               15. Gran inversión
             </Link>
@@ -34,15 +34,23 @@ export const HomePage = () => {
           <li className="w-full">
             <Link
               to="formulario-con-hooks"
-              className="block h-32 w-full rounded-lg bg-cyan-600 p-4 font-medium text-white hover:bg-opacity-95"
+              className="block h-24 w-full rounded-lg bg-cyan-600 p-4 font-medium text-white hover:bg-opacity-95"
             >
               16. Formulario con Hooks
             </Link>
           </li>
           <li className="w-full">
             <Link
+              to="mas-formularios"
+              className="block h-24 w-full rounded-lg bg-rose-600 p-4 font-medium text-white hover:bg-opacity-95"
+            >
+              17. Mas formularios
+            </Link>
+          </li>
+          <li className="w-full">
+            <Link
               to="generador-de-caja"
-              className="block h-32 w-full rounded-lg bg-amber-600 p-4 font-medium text-white hover:bg-opacity-95"
+              className="block h-24 w-full rounded-lg bg-amber-600 p-4 font-medium text-white hover:bg-opacity-95"
             >
               19. Generador de caja
             </Link>
@@ -50,7 +58,7 @@ export const HomePage = () => {
           <li className="w-full">
             <Link
               to="tabs"
-              className="block h-32 w-full rounded-lg bg-emerald-600 p-4 font-medium text-white hover:bg-opacity-95"
+              className="block h-24 w-full rounded-lg bg-emerald-600 p-4 font-medium text-white hover:bg-opacity-95"
             >
               20. Pestañas
             </Link>
@@ -58,7 +66,7 @@ export const HomePage = () => {
           <li className="w-full">
             <Link
               to="lista-de-tareas"
-              className="block h-32 w-full rounded-lg bg-purple-600 p-4 font-medium text-white hover:bg-opacity-95"
+              className="block h-24 w-full rounded-lg bg-purple-600 p-4 font-medium text-white hover:bg-opacity-95"
             >
               21. Lista de tareas
             </Link>
