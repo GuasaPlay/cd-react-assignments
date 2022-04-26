@@ -7,6 +7,7 @@ import { GranInversionPage } from "pages/GranInversionPage";
 import { FormularioConHooksPage } from "pages/FormularioConHooksPage";
 import { GeneradorDeCajaPage } from "pages/GeneradorDeCajaPage";
 import { TabsPage } from "pages/TabsPage";
+import { ToDoPage } from "pages/ToDoPage";
 
 export const RouterApp = () => {
   return (
@@ -26,6 +27,7 @@ export const RouterApp = () => {
           />
           <Route path="generador-de-caja" element={<GeneradorDeCajaPage />} />
           <Route path="tabs" element={<TabsPage />} />
+          <Route path="lista-de-tareas" element={<ToDoPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

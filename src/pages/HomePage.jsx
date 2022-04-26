@@ -55,6 +55,14 @@ export const HomePage = () => {
               20. Pestañas
             </Link>
           </li>
+          <li className="w-full">
+            <Link
+              to="lista-de-tareas"
+              className="block h-32 w-full rounded-lg bg-purple-600 p-4 font-medium text-white hover:bg-opacity-95"
+            >
+              21. Lista de tareas
+            </Link>
+          </li>
         </ul>
       </section>
     </div>
