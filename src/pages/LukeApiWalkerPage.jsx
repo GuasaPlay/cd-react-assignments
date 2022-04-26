@@ -39,7 +39,7 @@ export const LukeApiWalkerPage = () => {
   };
   return (
     <div className="mx-auto mt-20 max-w-[1100px] px-3">
-      <PageTitle name="26. Practica de enrutamiento" />
+      <PageTitle name="27. Luke APIwalker" />
       <section className="mt-8 flex w-full flex-col items-center">
         <div className="grid w-1/2 grid-cols-2 gap-6">
           <div className="flex-1">
