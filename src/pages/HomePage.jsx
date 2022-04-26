@@ -71,6 +71,14 @@ export const HomePage = () => {
               21. Lista de tareas
             </Link>
           </li>
+          <li className="w-full">
+            <Link
+              to="pokemon-api"
+              className="block h-24 w-full rounded-lg bg-zinc-600 p-4 font-medium text-white hover:bg-opacity-95"
+            >
+              24. Pokemon API
+            </Link>
+          </li>
         </ul>
       </section>
     </div>

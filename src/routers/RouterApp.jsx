@@ -9,6 +9,7 @@ import { GeneradorDeCajaPage } from "pages/GeneradorDeCajaPage";
 import { TabsPage } from "pages/TabsPage";
 import { ToDoPage } from "pages/ToDoPage";
 import { MasFormulariosPage } from "pages/MasFormulariosPage";
+import { PokemonApiPage } from "pages/PokemonApiPage";
 
 export const RouterApp = () => {
   return (
@@ -30,6 +31,7 @@ export const RouterApp = () => {
           <Route path="generador-de-caja" element={<GeneradorDeCajaPage />} />
           <Route path="tabs" element={<TabsPage />} />
           <Route path="lista-de-tareas" element={<ToDoPage />} />
+          <Route path="pokemon-api" element={<PokemonApiPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
