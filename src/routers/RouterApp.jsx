@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { DefaultLayout } from "layouts/DefaultLayout";
-import { HomePage } from "pages/HomePage";
+import { MainPage } from "pages/MainPage";
 import { ApoyaloPage } from "pages/ApoyaloPage";
 import { PoniendoTodoJuntoPage } from "pages/PoniendoTodoJuntoPage";
 import { GranInversionPage } from "pages/GranInversionPage";
@@ -11,13 +11,18 @@ import { ToDoPage } from "pages/ToDoPage";
 import { MasFormulariosPage } from "pages/MasFormulariosPage";
 import { PokemonApiPage } from "pages/PokemonApiPage";
 import { AxiosPokemonApiPage } from "pages/AxiosPokemonApiPage";
+import { EnrutamientoPage } from "pages/EnrutamientoPage";
+import { IdPage } from "pages/enrutamiento/IdPage";
+
+import { WordColorPage } from "pages/enrutamiento/WordColorPage";
+import { HomePage } from "pages/enrutamiento/HomePage";
 
 export const RouterApp = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<DefaultLayout />}>
-          <Route index element={<HomePage />} />
+          <Route index element={<MainPage />} />
           <Route path="apoyalo" element={<ApoyaloPage />} />
           <Route
             path="poniendo-todo-junto"
@@ -34,6 +39,10 @@ export const RouterApp = () => {
           <Route path="lista-de-tareas" element={<ToDoPage />} />
           <Route path="pokemon-api" element={<PokemonApiPage />} />
           <Route path="axios-pokemon-api" element={<AxiosPokemonApiPage />} />
+          <Route path="enrutamiento" element={<EnrutamientoPage />} />
+          <Route path="home" element={<HomePage />} />
+          <Route path=":id" element={<IdPage />} />
+          <Route path=":word/:color1/:color2" element={<WordColorPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

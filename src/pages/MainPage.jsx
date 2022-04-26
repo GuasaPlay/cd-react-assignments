@@ -1,7 +1,7 @@
 import { PageTitle } from "components/ui/PageTitle";
 import { Link } from "react-router-dom";
 
-export const HomePage = () => {
+export const MainPage = () => {
   return (
     <div className="mx-auto mt-20 max-w-[1100px] px-3">
       <PageTitle name="Coding Dojo Assignments - MERN SPANISH" />
@@ -58,7 +58,7 @@ export const HomePage = () => {
           <li className="w-full">
             <Link
               to="tabs"
-              className="block h-24 w-full rounded-lg bg-emerald-600 p-4 font-medium text-white hover:bg-opacity-95"
+              className="block h-24 w-full rounded-lg bg-violet-600 p-4 font-medium text-white hover:bg-opacity-95"
             >
               20. Pestañas
             </Link>
@@ -85,6 +85,14 @@ export const HomePage = () => {
               className="block h-24 w-full rounded-lg bg-fuchsia-600 p-4 font-medium text-white hover:bg-opacity-95"
             >
               25. Axios Pokemon API
+            </Link>
+          </li>
+          <li className="w-full">
+            <Link
+              to="enrutamiento"
+              className="block h-24 w-full rounded-lg bg-emerald-600 p-4 font-medium text-white hover:bg-opacity-95"
+            >
+              26. Practica de enrutamiento
             </Link>
           </li>
         </ul>
