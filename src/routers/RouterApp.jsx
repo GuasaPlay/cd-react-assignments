@@ -16,6 +16,8 @@ import { IdPage } from "pages/enrutamiento/IdPage";
 
 import { WordColorPage } from "pages/enrutamiento/WordColorPage";
 import { HomePage } from "pages/enrutamiento/HomePage";
+import { LukeApiWalkerPage } from "pages/LukeApiWalkerPage";
+import { ResourcePage } from "pages/ResourcePage";
 
 export const RouterApp = () => {
   return (
@@ -43,6 +45,11 @@ export const RouterApp = () => {
           <Route path="home" element={<HomePage />} />
           <Route path=":id" element={<IdPage />} />
           <Route path=":word/:color1/:color2" element={<WordColorPage />} />
+          <Route path="luke-api-walker" element={<LukeApiWalkerPage />} />
+          <Route
+            path="luke-api-walker/:resource/:resourceId"
+            element={<ResourcePage />}
+          />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

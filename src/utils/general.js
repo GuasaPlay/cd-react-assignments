@@ -65,3 +65,30 @@ export const colors = [
     text: "text-emerald-600",
   },
 ];
+
+export const resourcesOptions = [
+  {
+    value: "people",
+    label: "People",
+  },
+  {
+    value: "planets",
+    label: "Planets",
+  },
+  {
+    value: "films",
+    label: "Films",
+  },
+  {
+    value: "species",
+    label: "Species",
+  },
+  {
+    value: "vehicles",
+    label: "Vehicles",
+  },
+  {
+    value: "starships",
+    label: "Starships",
+  },
+];
