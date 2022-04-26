@@ -11,7 +11,7 @@ export const TabsPage = () => {
 
   return (
     <div className="mx-auto mt-20 max-w-[1100px] px-3">
-      <PageTitle name="Pestañas" />
+      <PageTitle name="20. Pestañas" />
       <section className="mt-6 rounded-lg border-2 border-slate-500">
         <TabHeader
           activeTab={activeTab}

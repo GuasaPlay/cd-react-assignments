@@ -49,7 +49,7 @@ export const ToDoPage = () => {
 
   return (
     <div className="mx-auto mt-20 max-w-[1100px] px-3">
-      <PageTitle name="Lista de tareas" />
+      <PageTitle name="21. Lista de tareas" />
       <section className="mt-8 flex w-full justify-center">
         <div className="w-3/4">
           <NewTaskForm
