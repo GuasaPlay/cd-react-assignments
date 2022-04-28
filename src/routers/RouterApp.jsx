@@ -18,6 +18,8 @@ import { WordColorPage } from "pages/enrutamiento/WordColorPage";
 import { HomePage } from "pages/enrutamiento/HomePage";
 import { LukeApiWalkerPage } from "pages/LukeApiWalkerPage";
 import { ResourcePage } from "pages/ResourcePage";
+import { AuthLayout } from "layouts/AuthLayout";
+import { LoginPage } from "pages/LoginPage";
 
 export const RouterApp = () => {
   return (
@@ -51,7 +53,10 @@ export const RouterApp = () => {
             element={<ResourcePage />}
           />
         </Route>
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/auth" element={<AuthLayout />}>
+          <Route path="login" element={<LoginPage />} />
+        </Route>
+        <Route path="*" element={<Navigate to="/" />}></Route>
       </Routes>
     </BrowserRouter>
   );

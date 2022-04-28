@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export const PokemonApiPage = () => {
   const [pokemons, setPokemons] = useState([]);
+
   const [loading, setLoading] = useState(false);
 
   const handleSearchPokemon = async () => {

@@ -1,12 +1,11 @@
 import { Outlet } from "react-router-dom";
 
-export const DefaultLayout = () => {
+export const AuthLayout = () => {
   return (
     <main>
       <div>
         <nav className="container mx-auto flex w-full justify-between">
-          <div>Oscar</div>
-          <button>Login</button>
+          <div className="font-bold">Layout para la Auth</div>
         </nav>
       </div>
       <Outlet />
