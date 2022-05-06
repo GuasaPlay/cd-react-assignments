@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CardItem } from "./CardItem";
 
 export const FilmsCard = ({ result }) => {
   const getIdResult = () => result?.data?.url?.split("/")[5];
@@ -13,18 +14,9 @@ export const FilmsCard = ({ result }) => {
         {resource.label}: {data?.title}
       </Link>
       <div className="divide-y-2 divide-gray-300">
-        <div className="mt-4 flex w-full space-x-6">
-          <div className="flex-1 text-right">Director:</div>
-          <div className="flex-1">{data?.director}</div>
-        </div>
-        <div className="mt-4 flex w-full space-x-6 pt-4">
-          <div className="flex-1 text-right">Producer:</div>
-          <div className="flex-1">{data?.director}</div>
-        </div>
-        <div className="mt-4 flex w-full space-x-6 pt-4">
-          <div className="flex-1 text-right">Release date:</div>
-          <div className="flex-1">{data?.release_date}</div>
-        </div>
+        <CardItem name="Director" item={data.director} />
+        <CardItem name="Producer" item={data.producer} />
+        <CardItem name="Release date" item={data.release_date} />
       </div>
     </div>
   );

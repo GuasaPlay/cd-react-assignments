@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CardItem } from "./CardItem";
 
 export const StarshipsCard = ({ result }) => {
   const getIdResult = () => result?.data?.url?.split("/")[5];
@@ -13,18 +14,9 @@ export const StarshipsCard = ({ result }) => {
         {resource.label}: {data?.name}
       </Link>
       <div className="divide-y-2 divide-gray-300">
-        <div className="mt-4 flex w-full space-x-6">
-          <div className="flex-1 text-right">Model:</div>
-          <div className="flex-1">{data?.model}</div>
-        </div>
-        <div className="mt-4 flex w-full space-x-6 pt-4">
-          <div className="flex-1 text-right">Manufacturer:</div>
-          <div className="flex-1">{data?.manufacturer}</div>
-        </div>
-        <div className="mt-4 flex w-full space-x-6 pt-4">
-          <div className="flex-1 text-right">Class:</div>
-          <div className="flex-1">{data?.starship_class}</div>
-        </div>
+        <CardItem name="Model" item={data?.model} />
+        <CardItem name="Manufacturer" item={data?.manufacturer} />
+        <CardItem name="Class" item={data?.starship_class} />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ class PersonCard extends Component {
   }
 
   render() {
-    const { firstName, lastName, age, hairColor } = this.props;
+    const { firstName, lastName, hairColor } = this.props;
     return (
       <div className="flex w-full justify-center">
         <div className="w-1/3 rounded-lg border-2 border-slate-500 p-3">
@@ -27,9 +27,7 @@ class PersonCard extends Component {
           </section>
           <section className="mt-3 flex w-full justify-center">
             <button
-              onClick={() => {
-                this.setState({ age: age + 1 });
-              }}
+              onClick={() => this.setState({ age: this.state.age + 1 })}
               className="rounded-md bg-gray-200 py-2 px-4 text-sm text-slate-700 hover:bg-gray-300"
             >
               Birthday button for {firstName} {lastName}

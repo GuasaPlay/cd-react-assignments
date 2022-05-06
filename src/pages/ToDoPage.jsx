@@ -24,6 +24,9 @@ export const ToDoPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (values.task.trim() === "") return alert("Please enter a task");
+
     const newTask = {
       name: values.task,
       done: false,
@@ -56,6 +59,7 @@ export const ToDoPage = () => {
             handleInputChange={handleInputChange}
             handleSubmit={handleSubmit}
             values={values}
+            isEmpty={values.task.trim() === ""}
           />
           <div className="mt-12">
             <ToDoList

@@ -21,11 +21,19 @@ export const ResourcePage = () => {
 
         const response = await axios.get(url);
 
+        const urlHomeworld = response.data.homeworld;
+
+        const responseHomeworld =
+          urlHomeworld && (await axios.get(urlHomeworld));
+
         setResult({
           resource: resourcesOptions.find(
             (option) => option.value === resource
           ),
-          data: response.data,
+          data: {
+            ...response.data,
+            ...(responseHomeworld && { homeworld: responseHomeworld.data }),
+          },
         });
       } catch (error) {
         setResult(null);

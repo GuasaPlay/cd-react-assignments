@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { CardItem } from "./CardItem";
 
 export const PeopleCard = ({ result }) => {
   const getIdResult = () => result?.data?.url?.split("/")[5];
   const { resource, data } = result;
+
   return (
     <div className="mt-6 w-1/2 rounded-lg bg-white p-3 shadow-xl">
       <Link
@@ -12,18 +14,12 @@ export const PeopleCard = ({ result }) => {
         {resource.label}: {data?.name}
       </Link>
       <div className="divide-y-2 divide-gray-300">
-        <div className="mt-4 flex w-full space-x-6">
-          <div className="flex-1 text-right">Height:</div>
-          <div className="flex-1">{data?.height}</div>
-        </div>
-        <div className="mt-4 flex w-full space-x-6 pt-4">
-          <div className="flex-1 text-right">Hair Color:</div>
-          <div className="flex-1">{data?.hair_color}</div>
-        </div>
-        <div className="mt-4 flex w-full space-x-6 pt-4">
-          <div className="flex-1 text-right">Birth Year:</div>
-          <div className="flex-1">{data?.birth_year}</div>
-        </div>
+        <CardItem name="Height" item={data.height} />
+        <CardItem name="Hair Color" item={data.hair_color} />
+        <CardItem name="Birth Year" item={data.birth_year} />
+        {data?.homeworld && (
+          <CardItem name="Homeworld" item={data.homeworld.name} />
+        )}
       </div>
     </div>
   );

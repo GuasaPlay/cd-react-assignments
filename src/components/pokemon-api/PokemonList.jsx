@@ -3,7 +3,9 @@ export const PokemonList = ({ pokemons }) => {
     <ul className="mt-4 list-inside list-disc">
       {pokemons.map((pokemon, index) => (
         <li key={index}>
-          <a href={pokemon.url}>{pokemon.name}</a>
+          <a href={pokemon.url} target="__blank">
+            {pokemon.name}
+          </a>
         </li>
       ))}
     </ul>
